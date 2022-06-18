@@ -14,6 +14,17 @@ function menorMayor(numeros) {
   // y 15 es el número más grande (mayor) dentro del arreglo [4, 6, 1, 7, 15]
 
   // Tu código aca:
+  let menor = numeros[0];
+  let mayor = numeros[0];
+  for( var i = 0; i < numeros.length ; i++){
+    if(menor > numeros[i]){
+      menor = numeros[i];
+    }
+    if(mayor < numeros[i]){
+      mayor = numeros[i];
+    }
+  }
+  return [menor, mayor];
 }
 
 // No modifiques nada debajo de esta linea //

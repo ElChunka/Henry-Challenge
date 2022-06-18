@@ -14,6 +14,11 @@ function pluck(array, propiedad) {
   // Pista: es una buena oportunidad para usar map.
 
   // Tu código acá:
+  
+
+let nombresCompletos = array.map(prefijo => prefijo[propiedad]);
+
+return nombresCompletos;
 
 }
 
